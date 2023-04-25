@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'IvyMode';
+    src: url('../fonts/IvyMode/IvyMode-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.cabecera {
+    justify-content: flex-end;
+    margin-bottom: 37px;
+    padding: 0 2.60%;
+}
+
+.cabecera .logotipo {
+    top: 0;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 1640px) {}
+
+.conjunto-formulario {
+    width: 94.80%;
+    max-width: 1820px;
+    height: 780px;
+    background: linear-gradient(0deg, #EFEAAA 0%, #F2A282 40%, #EEA3D5 40%, #7068B1 100%);
+    margin: auto;
+    padding-top: 50px;
+}
+
+.conjunto-formulario h2 {
+    color: #FFFFFF;
+    font-size: 48px;
+    line-height: 58px;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 53px;
+}
+
+.conjunto-formulario .formulario {
+    width: 94.80%;
+    max-width: 590px;
+    height: auto;
+    margin: auto;
+}
+
+.conjunto-formulario .formulario .fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.conjunto-formulario .formulario .fila .columna {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    margin-bottom: 45px;
+}
+
+.conjunto-formulario .formulario .fila .columna label {
+    color: #FFFFFF;
+    font-family: 'IvyMode', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    width: 100%;
+    height: 30px;
+    display: block;
+}
+
+.conjunto-formulario .formulario .fila .columna input {
+    color: #FFFFFF;
+    font-family: 'Halyard Text', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    width: 100%;
+    height: 30px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1.5px solid #FFFFFF;
+}
+
+.conjunto-formulario .formulario>.fila:last-of-type:has(input[type="checkbox"]) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+    margin: 60px 0 29px;
+    padding-left: 0;
+}
+
+.conjunto-formulario .formulario>.fila:last-of-type:has(input[type="checkbox"]) input {
+    width: 12px;
+    height: 12px;
+    display: block;
+}
+
+.conjunto-formulario .formulario>.fila:last-of-type:has(input[type="checkbox"]) input::after {
+    content: "";
+    width: 12px;
+    height: 12px;
+    background-color: #F2A282;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 1px solid #FFFFFF;
+}
+
+.conjunto-formulario .formulario>.fila:last-of-type:has(input[type="checkbox"]) input:checked::after {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #F2A282;
+    outline: 1px solid #FFFFFF;
+}
+
+.conjunto-formulario .formulario>.fila:last-of-type:has(input[type="checkbox"]) label {
+    color: #FFFFFF;
+    font-family: 'Halyard Text', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 22px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.conjunto-formulario .formulario input[type="submit"] {
+    color: #3C3935;
+    font-family: 'Halyard Display', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 20px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    width: 250px;
+    height: 48px;
+    display: block;
+    background-color: #FFFFFF;
+    margin: auto;
+    border: none;
+    border-radius: 100px;
+}
+
+@media only screen and (max-width: 1640px) {}

@@ -1,0 +1,898 @@
+@font-face {
+    font-family: 'Halyard Display';
+    src: url('../fonts/Halyard/Halyard\ Display\ ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halyard Display';
+    src: url('../fonts/Halyard/Halyard\ Display\ Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halyard Display';
+    src: url('../fonts/Halyard/Halyard\ Display\ SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Halyard Display';
+    src: url('../fonts/Halyard/Halyard\ Display\ Bold.ttf.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+.cabecera {
+    padding: 0 2.55%;
+}
+
+.cabecera .menu,
+.cabecera .menu li {
+    gap: 10px;
+}
+
+.cabecera .menu li,
+.cabecera .menu li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cabecera .menu li:not(.cabecera .menu li:last-of-type)::after {
+    content: url("../images/svg/conector.svg");
+    width: auto;
+    height: 30px;
+}
+
+.cabecera .menu li a {
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    background: linear-gradient(0deg, #7BAAE7 0%, #5661C6 100%);
+    border-radius: 100px;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 1640px) {
+
+    .cabecera {
+        padding-bottom: 60px;
+    }
+
+    .cabecera .menu {
+        justify-content: center;
+    }
+
+    .cabecera .menu li {
+        width: auto;
+    }
+
+}
+
+.texto {
+    margin-bottom: 75px;
+}
+
+.apartado.apartado-violeta {
+    margin-bottom: 200px;
+}
+
+.texto#calidades {
+    margin-bottom: 105px;
+}
+
+.apartado.apartado-azul {
+    height: 952px;
+    background: linear-gradient(0deg, #7BAAE7 0%, #5661C6 100%);
+    mix-blend-mode: normal;
+    padding-top: 125px;
+}
+
+.apartado.apartado-azul h1 {
+    color: #FFFFFF;
+    margin-bottom: 145px;
+}
+
+.apartado.apartado-azul .fila {
+    max-width: 1606px;
+    justify-content: space-between;
+    column-gap: 5.16%;
+    margin: 0 auto 70px;
+}
+
+.apartado.apartado-azul .fila .celda {
+    font-family: 'Halyard Display', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.025em;
+    width: 242px;
+    padding: 32px 0 0 58px;
+    border-top: 3px solid #62C8EE;
+}
+
+.apartado.apartado-azul .fila .celda::after {
+    content: url("../images/svg/flecha_hacia_derecha.svg");
+    position: absolute;
+    top: 32px;
+    left: 0;
+}
+
+.apartado.apartado-azul .fila .celda:first-of-type::before {
+    content: "Nº DORMITORIOS";
+}
+
+.apartado.apartado-azul .fila .celda:nth-of-type(2)::before {
+    content: "PLANTA";
+    opacity: 0.3;
+}
+
+.apartado.apartado-azul .fila .celda:nth-of-type(3)::before {
+    content: "PRECIOS";
+}
+
+.apartado.apartado-azul .fila .celda:nth-of-type(4)::before {
+    content: "ORIENTACIÓN";
+}
+
+.apartado.apartado-azul .fila .celda:last-of-type:before {
+    content: "PORTAL";
+}
+
+.apartado.apartado-azul .fila .celda ul {
+    list-style: none;
+}
+
+.apartado.apartado-azul .fila .celda ul li {
+    margin-top: 12px;
+}
+
+.apartado.apartado-azul .boton {
+    color: #FFFFFF;
+    font-family: 'Halyard Display', sans-serif;
+    font-style: normal;
+    letter-spacing: 0.025em;
+    text-align: center;
+    width: 250px;
+    height: 42.60px;
+    display: block;
+    margin: auto;
+    border-radius: 100px;
+}
+
+.apartado.apartado-azul .boton.boton-busqueda {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 20px;
+    background-color: #62C8EE;
+    margin-bottom: 35.79px;
+    border: none;
+}
+
+.apartado.apartado-azul .boton.boton-opcion {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 28px;
+    background-color: transparent;
+    margin-bottom: 10px;
+    border: 1px solid #62C8EE;
+}
+
+.apartado.apartado-azul .boton.boton.boton-opcion::after {
+    content: "";
+    width: 22px;
+    height: 22px;
+    background-color: #FFFFFF;
+    clip-path: polygon(50% 100%, 0 25%, 100% 25%);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 42px;
+    bottom: 0;
+}
+
+.apartado.apartado-azul>ul {
+    list-style: none;
+}
+
+.apartado.apartado-azul>ul li {
+    font-family: 'Halyard Display', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 47px;
+    text-align: center;
+    letter-spacing: 0.025em;
+    opacity: 0.3;
+}
+
+.conjunto-intermedio {
+    width: 83.65%;
+    max-width: 1606px;
+    margin: 0 auto 100px;
+}
+
+.conjunto-intermedio .fila {
+    color: #3C3935;
+    font-family: 'Halyard Display', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    width: 100%;
+    height: 126px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+    padding: 0 100px 0 46px;
+    list-style: none;
+    border-bottom: 3px solid #62C8EE;
+}
+
+.conjunto-intermedio .fila::before {
+    content: "PB1E";
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.conjunto-intermedio .fila::after {
+    width: auto;
+    height: auto;
+    content: url("../images/svg/flecha_hacia_derecha.svg");
+    margin: auto;
+    position: absolute;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    filter: invert(100%) sepia(2%) saturate(7500%) hue-rotate(78deg) brightness(110%) contrast(110%);
+}
+
+.conjunto-intermedio .plano-cenital {
+    width: 100%;
+    height: auto;
+    margin: 0 auto 42px;
+    border-bottom: 3px solid #62C8EE;
+}
+
+.conjunto-intermedio .plano-cenital::before {
+    content: "PLANTA BAJA";
+    width: 216px;
+    color: #3C3935;
+    font-family: 'Halyard Display', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.025em;
+    position: absolute;
+    right: 0;
+    bottom: 72px;
+    z-index: 1;
+}
+
+.conjunto-intermedio .plano-cenital::after {
+    content: "";
+    width: calc((100% - 23.41%) / 8.90);
+    max-width: 137px;
+    height: calc((100% - 77px) / 5.15);
+    max-height: 135px;
+    background-color: #62C8EE;
+    mix-blend-mode: multiply;
+    position: absolute;
+    bottom: calc(77px + ((100% - 77px) / 22));
+    left: calc(11.705% + ((100% - 23.41%) / 4.25));
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.conjunto-intermedio .plano-cenital img {
+    width: 76.59%;
+    max-width: 1230px;
+    display: block;
+    margin: 0 auto 77px;
+}
+
+.conjunto-intermedio .plano,
+.conjunto-intermedio .plano .cuadro-de-superficies {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.conjunto-intermedio .plano {
+    width: 100%;
+    height: 1176px;
+    flex-direction: row;
+    gap: 12.20%;
+}
+
+.conjunto-intermedio .plano ul {
+    list-style: none;
+}
+
+.conjunto-intermedio .plano ul li {
+    color: #3C3935;
+    font-family: 'Halyard Display', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    letter-spacing: 0.025em;
+}
+
+.conjunto-intermedio .plano ul li.fw600 {
+    font-weight: 600;
+}
+
+.conjunto-intermedio .plano .cuadro-de-superficies {
+    width: 500px;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.conjunto-intermedio .plano img {
+    display: block;
+    margin: 50px 12.20% 0 0;
+}
+
+.encabezado {
+    color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+}
+
+.encabezado h2 {
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.encabezado.encabezado-azul {
+    height: 344px;
+    background: linear-gradient(0deg, #7BAAE7 0%, #5661C6 100%);
+    margin-bottom: 184px;
+}
+
+.encabezado.encabezado.encabezado-azul h2 {
+    width: 83.65%;
+    max-width: 910px;
+    margin: 0 auto 33px;
+    padding-bottom: 52px;
+    border-bottom: 3px solid #FFFFFF;
+}
+
+.encabezado.encabezado-azul p {
+    font-family: 'Halyard Display', sans-serif;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 28px;
+}
+
+.encabezado.encabezado-azul p span {
+    font-weight: 500;
+}
+
+.tabla,
+.tabla .columna .celda {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.tabla {
+    width: 77.40%;
+    max-width: 1486px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 auto 100px;
+}
+
+.tabla p {
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+}
+
+.tabla p.fs10 {
+    font-size: 10px;
+}
+
+.tabla p.fs22 {
+    font-size: 22px;
+}
+
+.tabla p.fs30 {
+    font-size: 30px;
+}
+
+.tabla p.fw400 {
+    font-weight: 400;
+}
+
+.tabla p.fw700 {
+    font-weight: 700;
+}
+
+.tabla p span.fs10 {
+    font-size: 10px;
+}
+
+.tabla .columna {
+    width: 189px;
+}
+
+.tabla .columna:first-child {
+    width: 422px;
+    margin-right: 45px;
+}
+
+.tabla .columna:nth-child(2) {
+    width: 265px;
+    margin-right: 45px;
+}
+
+.tabla .columna:nth-child(3) {
+    margin-right: 59px;
+}
+
+.tabla .columna:nth-child(4) {
+    margin-right: 83px;
+}
+
+.tabla .columna .celda {
+    height: 56px;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.tabla .columna .celda.flex-end {
+    justify-content: flex-end;
+}
+
+.tabla .columna:not(.columna:first-child, .columna:nth-child(2)) .celda:not(.celda:first-child, .columna:nth-child(4) .celda:last-child) {
+    border-bottom: 1px solid #BFBFBF;
+}
+
+.tabla .columna:not(.columna:nth-child(2), .columna:nth-child(3)) .celda:is(.columna:first-child .celda:nth-child(6), .celda:last-child) {
+    margin-top: 42px;
+}
+
+.tabla .columna:nth-child(2) .celda:last-child {
+    margin-top: 140px;
+}
+
+.tabla .columna:first-child .celda:not(.celda:first-child, .celda:last-child),
+.tabla .columna:nth-child(2) .celda:not(.celda:first-child, .celda:nth-child(2), .celda:last-child) {
+    justify-content: space-between;
+}
+
+.tabla .columna:first-child .celda p:last-child {
+    width: 292px;
+}
+
+.tabla .columna:nth-child(2) .celda p:last-child {
+    width: 51px;
+}
+
+body>h2:last-of-type {
+    font-size: 48px;
+    line-height: 58px;
+    width: 83.65%;
+    max-width: 1606px;
+    margin: auto auto 75px;
+    padding-bottom: 62px;
+    border-bottom: 3px solid #62C8EE;
+}
+
+.cuadricula {
+    width: 83.65%;
+    max-width: 1606px;
+    gap: 50px 0;
+    margin-bottom: 80px;
+}
+
+.cuadricula .celda .icono img {
+    right: 0;
+    left: 0;
+}
+
+.cuadricula .celda h3 {
+    text-align: center;
+}
+
+.cuadricula .celda p {
+    width: 100%;
+    max-width: 500px;
+    background-color: #CBEDFA;
+    margin: auto;
+    padding: 30px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.cuadricula .celda p::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    background-color: #CBEDFA;
+    clip-path: polygon(50% 50%, 0% 100%, 100% 100%);
+    margin: auto;
+    position: absolute;
+    top: -40px;
+    right: 0;
+    left: 0;
+}
+
+.encabezado.encabezado-verde {
+    height: 237px;
+    background: linear-gradient(0deg, #E7E167 0%, #9FC629 100%);
+    margin-bottom: 81px;
+}
+
+.formulario {
+    width: 94.9%;
+    max-width: 892px;
+    height: auto;
+    margin: 0 auto 108.93px;
+}
+
+.formulario .fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.formulario .fila .columna {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+    margin-bottom: 30px;
+}
+
+.formulario .fila .columna label {
+    color: #3C3935;
+    font-family: 'IvyMode', sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    width: 100%;
+    height: 30px;
+    display: block;
+}
+
+.formulario .fila .columna input {
+    color: #3C3935;
+    font-family: 'Halyard Text', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 30px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    width: 100%;
+    height: 40px;
+    display: block;
+    border: none;
+    border-bottom: 1.5px solid #3C393540;
+}
+
+.formulario>p {
+    color: #3C3935;
+    font-family: 'Halyard Text', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    width: 100%;
+    height: 35px;
+    margin: 32px 0 12px;
+}
+
+.formulario>p+.fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: unset;
+    margin-bottom: 125px;
+}
+
+.formulario>p+.fila .columna {
+    width: 100%;
+    max-width: 134px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+.formulario>p+.fila .columna p {
+    color: #3C3935;
+    font-family: 'Halyard Text', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1.5px solid #3C393540;
+}
+
+.formulario>p+.fila .columna .fila {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 12px;
+}
+
+.formulario>p+.fila .columna .fila input[type="checkbox"] {
+    width: 21px;
+    height: 21px;
+    display: block;
+    margin-right: 8px;
+}
+
+.formulario>p+.fila .columna .fila input[type="checkbox"]::after {
+    content: "";
+    width: 21px;
+    height: 21px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 1px solid #3C3935;
+}
+
+.formulario>p+.fila .columna .fila input[type="checkbox"]:checked::after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    background-color: #3C3935;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #FFFFFF;
+    outline: 1px solid #3C3935;
+}
+
+.formulario>p+.fila .columna .fila label {
+    color: #3C3935;
+    font-family: 'Halyard Text', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    width: 100%;
+    height: 21px;
+    display: block;
+}
+
+.formulario>p+.fila .columna:last-of-type {
+    width: 100%;
+    max-width: 508px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+.formulario>p+.fila .columna:last-of-type .fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.formulario>p+.fila .columna:last-of-type .fila .columna {
+    width: 100%;
+    max-width: 136px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+.formulario>p+.fila .columna:last-of-type .fila .fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.formulario>p+.fila .columna:last-of-type .fila .fila p {
+    color: #3C3935;
+    font-family: 'Halyard Text', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    width: 100%;
+    max-width: 112px;
+    height: 36px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0;
+    padding: 0 12px;
+    border: 1px solid #3C3935;
+}
+
+.formulario>.fila:nth-last-of-type(2):has(input[type="checkbox"]) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 28px;
+    margin-bottom: 22px;
+    padding-left: 13px;
+}
+
+.formulario>.fila:last-of-type:has(input[type="checkbox"]) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 28px;
+    margin-bottom: 109px;
+    padding-left: 13px;
+}
+
+.formulario>.fila:nth-last-of-type(2):has(input[type="checkbox"]) input,
+.formulario>.fila:last-of-type:has(input[type="checkbox"]) input {
+    width: 21px;
+    height: 21px;
+    display: block;
+    margin-right: 1.16px;
+}
+
+.formulario>.fila:nth-last-of-type(2):has(input[type="checkbox"]) input::after,
+.formulario>.fila:last-of-type:has(input[type="checkbox"]) input::after {
+    content: "";
+    width: 21px;
+    height: 21px;
+    background-color: #FFFFFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: 1px solid #3C3935;
+}
+
+.formulario>.fila:nth-last-of-type(2):has(input[type="checkbox"]) input:checked::after,
+.formulario>.fila:last-of-type:has(input[type="checkbox"]) input:checked::after {
+    content: "";
+    width: 17px;
+    height: 17px;
+    background-color: #3C3935;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid #FFFFFF;
+    outline: 1px solid #3C3935;
+}
+
+.formulario>.fila:nth-last-of-type(2):has(input[type="checkbox"]) label,
+.formulario>.fila:last-of-type:has(input[type="checkbox"]) label {
+    color: #3C3935;
+    font-family: 'Halyard Text', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.formulario input[type="submit"] {
+    color: #FFFFFF;
+    font-family: 'Halyard Display', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.025em;
+    text-align: center;
+    width: 248px;
+    height: 42.07px;
+    display: block;
+    background-color: #3C3935;
+    margin: auto;
+    border: none;
+    border-radius: 100px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .formulario .fila {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0;
+    }
+
+    .formulario>p+.fila {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        margin-bottom: 125px;
+    }
+
+    .formulario>p+.fila .columna {
+        width: 100%;
+        max-width: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 0;
+    }
+
+    .formulario>p+.fila .columna:last-of-type {
+        width: 100%;
+        max-width: none;
+        grid-column: 1 / -1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+        margin-bottom: 0;
+    }
+
+    .formulario>p+.fila .columna:last-of-type .fila .fila {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+}
