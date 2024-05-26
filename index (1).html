@@ -21,7 +21,7 @@
             <li><a href="#zonas-comunes">ZONAS COMUNES</a></li>
             <li><a href="#calidades">CALIDADES</a></li>
         </ul>
-        <img src="./images/svg/Alba_Homes_Logo.svg" alt="" class="logotipo">
+        <img id="btnInicio" src="./images/svg/Alba_Homes_Logo.svg" alt="" class="logotipo">
         <div class="columna-derecha">
             <p class="idioma"><a href="#">ES <span>/ EN</span></a></p>
             <button id="btnContacto" class="boton-contacto">CONTACTO</button>
@@ -481,6 +481,10 @@
 
     <script type="text/javascript">
         $(document).ready(function () {
+            $('#btnInicio').on('click', function () {
+                window.location.href = 'index (1).html';
+            });
+            
             $('#btnContacto').on('click', function () {
                 window.location.href = 'index (3).html';
             });
