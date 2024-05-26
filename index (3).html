@@ -13,7 +13,7 @@
 <body>
 
     <div class="cabecera">
-        <img src="./images/svg/Alba_Homes_Logo.svg" alt="" class="logotipo">
+        <img id="btnInicio" src="./images/svg/Alba_Homes_Logo.svg" alt="" class="logotipo">
         <div class="columna-derecha">
             <p class="idioma"><a href="#">ES <span>/ EN</span></a></p>
         </div>
@@ -21,7 +21,7 @@
 
     <div class="conjunto-formulario">
         <h2>Bienvenido a tu horizonte</h2>
-        <form action="#" class="formulario">
+        <form action="index (1).html" class="formulario">
             <div class="fila">
                 <div class="columna">
                     <label for="usuario">USUARIO</label>
@@ -43,6 +43,14 @@
             <input type="submit" value="INICIAR SESIÓN">
         </form>
     </div>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnInicio').on('click', function () {
+                window.location.href = 'index (1).html';
+            });
+        });
+    </script>
 
 </body>
 
